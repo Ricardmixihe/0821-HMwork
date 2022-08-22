@@ -1,0 +1,319 @@
+@rootsize:37.5px;
+
+// 主视口
+.view{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #fcfcfc;
+    // background-color: red;
+    // 顶部导航
+    .top_nav{
+        width: 100%;
+        height: (80rem/@rootsize);
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // 文字行标签大小
+        p{
+            font-size: (40rem/@rootsize);
+        }
+        span{
+            font-size: (40rem/@rootsize);
+        }
+        // 导航搜索框盒子
+        .top_search{
+            width: (600rem/@rootsize);
+            height: (60rem/@rootsize);
+            border: 1px solid #111;
+            text-align: center;
+            border-radius: (40rem/@rootsize);
+            background-color: #f7f7f7;
+            position: relative;
+
+            // input标签
+            input{
+                line-height: (60rem/@rootsize);
+                position: absolute;
+                top:50%;
+                left: (50rem/@rootsize);
+                transform: translatey(-50%);
+            }
+            //  span标签
+            span{
+                display: inline-block;
+                line-height: (60rem/@rootsize);
+                position: absolute;
+                top:50%;
+                left: (10rem/@rootsize);
+                transform: translatey(-50%);
+
+            }
+        }
+    }
+
+
+    // 轮播图组件
+    .carousel{
+        padding: (40rem/@rootsize) 0;
+        img{
+            width: 100%;
+        }
+        .carousel-bottom{
+            display: flex;
+            justify-content: space-around;
+            width: (200rem/@rootsize);
+            margin: 0 auto;
+            div{
+                width: (30rem/@rootsize);
+                height: (10rem/@rootsize);
+                background-color: #dfdfdf;
+                padding:0 (20rem/@rootsize);
+                margin-top: (10rem/@rootsize);
+                border-radius: (10rem/@rootsize);
+                &:first-child{
+                    background-color: #303030;
+                }
+            }
+
+            
+        }
+    }
+    
+
+
+    // 租房双盒子
+    .horse{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        //虽然不知道为什么加一个盒子flex就可以让左边有边距，两个图片居中
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            width: 80%;
+        }
+    }
+
+    //超值优惠
+    .sale{
+        padding: (50rem/@rootsize) (10rem/@rootsize);
+        width: 100%;
+        
+        .sale_top{
+            display: flex;
+            justify-content: space-between;
+            p{
+                display: block;
+                font-size: (60rem/@rootsize);
+                font-weight: 400;
+                color: #111;
+            }
+            img{
+                height: (60rem/@rootsize);
+                margin: auto 0;
+            }
+        }
+        
+        .sale-img{
+            width: 100%;
+            display: flex;
+        justify-content: center;
+            .img_font{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                // margin-left: (50rem/@rootsize);
+                div{
+                    width: 100%;
+                    img{
+                        padding: (40rem/@rootsize);
+                        width: 100%;
+                        height: 100%;
+                    }
+                        span{
+                            padding: (40rem/@rootsize);
+                            font-size: (20rem/@rootsize);
+                        &:nth-child(1){
+                            font-size: (40rem/@rootsize);
+                            color: #111;
+                        }
+                        &:last-child{
+                            font-size: (30rem/@rootsize);
+                            color: #f59200;
+                        }
+                    }
+                    
+                }
+            }
+           
+        }
+    }
+
+    //广告位招募图片
+    .middle-img{
+        width: 100%;
+        padding: (50rem/@rootsize);
+        img{
+            width: 100%;
+        }
+    }
+
+    // 为您推荐
+    .for_you{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .you_text1{
+            display: block;
+            font-size: (60rem/@rootsize);
+            font-weight: 400;
+            color: #111;
+        }
+        .you_text2{
+            display: flex;
+            position: relative;
+            p {
+                display: block;
+                font-size: (40rem/@rootsize);
+                font-weight: 400;
+                color: #111;
+                display: flex;
+                padding: 0 (30rem/@rootsize);
+            }
+            div{
+                img{
+                    width: (30rem/@rootsize);
+                    position:absolute;
+                    bottom: 0;
+                    right:(200rem/@rootsize)
+                }
+            }
+            
+        }
+    }
+
+
+    // 为您推荐图片列表
+    .youimg_list{
+        width: 100%;
+        display: flex;
+        padding: (50rem/@rootsize) (50rem/@rootsize);
+        
+        .itemlist{
+            width: 100%;
+            display: flex;
+            .itemlist-img{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    padding-right: (30rem/@rootsize);
+                }
+            }
+            .itemlist-text{
+                display: flex;
+                flex-direction: column;
+                div{
+                    border: 1px solid #111;
+                    width:40%;
+                    float:left;
+                    text-align: center;
+                }
+            }
+            p{
+                color: #111;
+                &:nth-child(1){
+                    font-size: (40rem/@rootsize);
+                    font-weight: 800;
+                }
+                &:nth-child(2){
+                    font-size: (20rem/@rootsize);
+                    font-weight: 800;
+                    color: #bcbcbc;
+                }
+                &:nth-child(3){
+                    font-size: (20rem/@rootsize);
+                    font-weight: 800;
+                    color: #bcbcbc;
+                }
+                &:nth-child(4){
+                    font-size: (20rem/@rootsize);
+                    font-weight: 800;
+                    color: #ed9f0b;
+                }
+
+            }
+            
+            
+        }
+    }
+
+    //查看优质房源
+    .findmore{
+        width: 100%;
+        height: (200rem/@rootsize);
+        text-align: center;
+        position: relative;
+        p{
+           display: block; 
+           height: (100rem/@rootsize);
+           width: 70%;
+           line-height: (100rem/@rootsize);
+           font-size: (50rem/@rootsize);
+           background-color: #f2f2f4;
+           border-radius: (100rem/@rootsize);
+           position: absolute;
+           left:50%;
+           transform: translate(-50%);
+        }
+    }
+
+
+    //品牌故事入口
+    .brand{
+        width: 100%;
+        div{
+            img{
+                width: 100%;
+                padding: (50rem/@rootsize);
+            }
+        }
+    }
+
+
+    // <!-- 最后固定定位支撑盒子 -->
+    .prop{
+        width: 100%;
+        height: (150rem/@rootsize);
+    }
+
+
+
+    // 最后的固定定位盒子
+    .fixed_box{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: (150rem/@rootsize);
+        display: flex;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 10px 10px 10px 10px rgba(0,0,0,.3);
+        .last_font{
+            flex: 1;
+            color: #e6e6e6;
+            padding: (25rem/@rootsize);
+            &:first-child{
+                color: #252525;
+            }
+        }
+    }
+}
+
